@@ -199,18 +199,41 @@ main { padding-top: var(--header-h); }
   padding: 24px;
   border-top: 4px solid var(--salmon);
 }
-.feature__photo {
-  aspect-ratio: 16 / 10;
-  border-radius: calc(var(--radius) - 4px);
-  border: 1px dashed rgba(255,255,255,0.25);
-  margin-bottom: 16px;
-}
 .feature__title {
   font-size: 1.1rem;
   color: var(--white);
   margin-bottom: 10px;
 }
 .feature__text {
+  font-size: .92rem;
+  color: rgba(255,255,255,0.75);
+  margin: 0;
+}
+
+/* ---------- Banner de fundadores ---------- */
+.founder-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  padding: 24px;
+  border-top: 4px solid var(--salmon);
+  margin-top: 20px;
+}
+.founder-banner__photo {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px dashed rgba(255,255,255,0.25);
+  flex-shrink: 0;
+}
+.founder-banner__title {
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.founder-banner__body {
   font-size: .92rem;
   color: rgba(255,255,255,0.75);
   margin: 0;
@@ -330,6 +353,8 @@ main { padding-top: var(--header-h); }
   .grid--4 { grid-template-columns: repeat(2, 1fr); }
   .grid--3 { grid-template-columns: repeat(3, 1fr); }
   .grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .founder-banner { flex-direction: row; align-items: center; }
+  .founder-banner__photo { flex: 0 0 280px; aspect-ratio: 4 / 3; }
 }
 
 @media (min-width: 900px) {
