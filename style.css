@@ -329,6 +329,15 @@ main { padding-top: var(--header-h); }
   font-size: .85rem;
   margin: 4px 0;
 }
+.footer__legal {
+  font-size: .75rem;
+  margin: 18px 0 0;
+  opacity: .6;
+}
+.footer__legal a {
+  color: var(--sky);
+  text-decoration: underline;
+}
 
 /* ---------- WhatsApp flotante ---------- */
 .whatsapp-float {
