@@ -124,17 +124,16 @@ main { padding-top: var(--header-h); }
   margin-top: .8em;
 }
 .hero__media {
-  background: rgba(255,255,255,0.05);
-  border: 1px dashed rgba(255,255,255,0.25);
   border-radius: var(--radius);
-  min-height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.4);
-  font-size: .85rem;
-  text-align: center;
-  padding: 20px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+.hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% center;
+  display: block;
 }
 
 /* ---------- Secciones genéricas ---------- */
@@ -343,7 +342,7 @@ main { padding-top: var(--header-h); }
     align-items: center;
   }
   .hero__text { flex: 1; }
-  .hero__media { flex: 1; min-height: 320px; }
+  .hero__media { flex: 1; aspect-ratio: 16 / 10; }
   .hero__title { font-size: 2.6rem; }
   .grid--4 { grid-template-columns: repeat(4, 1fr); }
   .section__title { font-size: 2rem; }
